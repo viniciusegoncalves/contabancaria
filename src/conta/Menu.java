@@ -1,10 +1,21 @@
 package conta;
 
 import java.util.Scanner;
+
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
     public static void main(String[] args) {
+        //Testando
+        Conta conta = new Conta(4567, 1, "Vinícius", 1000000.00f, 1234);
+        conta.visualizar();
+        conta.sacar(12000.0f);
+        conta.visualizar();
+        conta.depositar(5000.0f);
+        conta.visualizar();
+
+
         Scanner sc = new Scanner(System.in);
 
         int opcao;
@@ -88,5 +99,6 @@ public class Menu {
         System.out.println("github.com/conteudoGeneration");
         System.out.println("*********************************************************");
     }
+
 }
 
