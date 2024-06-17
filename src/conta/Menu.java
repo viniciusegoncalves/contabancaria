@@ -10,13 +10,6 @@ import conta.util.Cores;
 public class Menu {
     public static void main(String[] args) {
         //Testando
-        Conta conta = new Conta(4567, 1, "Vinícius", 1000000.00f, 1234);
-        conta.visualizar();
-        conta.sacar(12000.0f);
-        conta.visualizar();
-        conta.depositar(5000.0f);
-        conta.visualizar();
-
         ContaCorrente corrente = new ContaCorrente(1, 1, "Letícia", 5000,
                 1234, 15000);
         corrente.visualizar();
